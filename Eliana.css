@@ -1,0 +1,131 @@
+/* Estilos básicos para la página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+nav {
+    background-color: #444;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #ff6347;
+}
+
+section {
+    background-color: white;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 900px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/* Estilos para la sección de deportes */
+#actividades-deportivas {
+    background-color: white;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 900px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#actividades-deportivas h2 {
+    text-align: center;
+    color: #333;
+}
+
+.deportes-container {
+    display: flex;
+    flex-wrap: wrap;  /* Permite que los elementos se envuelvan en pantallas más pequeñas */
+    justify-content: space-between;  /* Espacio entre las columnas */
+    gap: 20px;  /* Espacio entre las columnas */
+}
+
+.deporte {
+    flex: 1 1 22%;  /* Cada columna ocupará un 22% del ancho, con espacio para 4 columnas */
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.deporte h3 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.deporte p {
+    color: #666;
+    font-size: 16px;
+}
+
+/* Responsividad: en pantallas pequeñas, las columnas se ajustan */
+@media (max-width: 768px) {
+    .deporte {
+        flex: 1 1 48%;  /* 2 columnas por fila en pantallas medianas */
+    }
+}
+
+@media (max-width: 480px) {
+    .deporte {
+        flex: 1 1 100%;  /* 1 columna por fila en pantallas pequeñas */
+    }
+}
+
+
+
+section h2 {
+    color: #333;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
